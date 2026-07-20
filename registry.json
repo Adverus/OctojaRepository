@@ -1,42 +1,41 @@
 {
     "version": "1.0",
-    "generated": "2026-07-08T10:00:00Z",
-    "baseUrl": "https://checks.example.com/",
+    "generated": "2026-07-20T11:04:00Z",
+    "baseUrl": "https://github.com/Adverus/OctojaRepository/",
     "checks": [
         {
-            "id": "disk-temperature",
+            "id": "smbv1-state",
             "name": {
-                "en": "Disk Temperature",
-                "de": "Festplattentemperatur"
+                "en": "SMBv1 State",
+                "de": "SMBv1-Zustand"
             },
             "description": {
-                "en": "Reports the temperature of each drive.",
-                "de": "Meldet die Temperatur jeder Festplatte."
+                "en": "Reports the state of SMBv1 protocol.",
+                "de": "Meldet den Zustand des SMBv1-Protokolls."
             },
-            "author": "Example MSP",
+            "author": "ICO Innovative Computer GmbH, Olaf Reitz",
             "icon": {
                 "type": "component",
                 "library": "lucide",
-                "name": "thermometer"
+                "name": "shield-check"
             },
             "category": "hardware",
             "tags": [
-                "disk",
-                "temperature"
+                "ICO",
+                "security"
             ],
             "platforms": [
-                "win-x64",
-                "linux-x64"
+                "win-x64"
             ],
-            "version": "1.2.0",
-            "interval": 15,
+            "version": "1.0.0",
+            "interval": 60,
             "executionLocation": "Device",
             "executable": {
                 "win-x64": {
-                    "downloadUri": "https://checks.example.com/checks/disk-temperature/1.2.0/win-x64/check.exe",
-                    "executableName": "check.exe",
-                    "fileType": "Exe",
-                    "executionType": "Exe"
+                    "downloadUri": "https://github.com/Adverus/OctojaRepository/checks/smbv1-state/1.0.0/win-x64/TestSMBv1State.ps1",
+                    "executableName": "TestSMBv1State.ps1",
+                    "fileType": "Script",
+                    "executionType": "PowerShell"
                 }
             }
         }
