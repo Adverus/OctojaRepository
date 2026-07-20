@@ -1,0 +1,44 @@
+{
+    "version": "1.0",
+    "generated": "2026-07-08T10:00:00Z",
+    "baseUrl": "https://checks.example.com/",
+    "checks": [
+        {
+            "id": "disk-temperature",
+            "name": {
+                "en": "Disk Temperature",
+                "de": "Festplattentemperatur"
+            },
+            "description": {
+                "en": "Reports the temperature of each drive.",
+                "de": "Meldet die Temperatur jeder Festplatte."
+            },
+            "author": "Example MSP",
+            "icon": {
+                "type": "component",
+                "library": "lucide",
+                "name": "thermometer"
+            },
+            "category": "hardware",
+            "tags": [
+                "disk",
+                "temperature"
+            ],
+            "platforms": [
+                "win-x64",
+                "linux-x64"
+            ],
+            "version": "1.2.0",
+            "interval": 15,
+            "executionLocation": "Device",
+            "executable": {
+                "win-x64": {
+                    "downloadUri": "https://checks.example.com/checks/disk-temperature/1.2.0/win-x64/check.exe",
+                    "executableName": "check.exe",
+                    "fileType": "Exe",
+                    "executionType": "Exe"
+                }
+            }
+        }
+    ]
+}
