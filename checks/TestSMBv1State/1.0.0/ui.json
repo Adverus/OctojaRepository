@@ -1,5 +1,33 @@
 {
     "input": {
+        "Skriptname": {
+            "order": 0,
+            "type": "string",
+            "title": {
+              "en": "Skriptname",
+              "de": "Skriptname",
+              "fr": "",
+              "nl": ""
+            },
+            "description": {
+              "en": "Tickettitel",
+              "de": "Tickettitel",
+              "fr": "",
+              "nl": ""
+            },
+            "isRequired": true,
+            "default": "SMBv1 State [ICO][WIN]",
+            "visibleIf": null,
+            "itemsSource": null,
+            "itemDisplaySelector": null,
+            "itemValueSelector": null,
+            "suggestFromOutput": null,
+            "items": null,
+            "properties": null,
+            "options": null,
+            "style": null,
+            "value": null
+        }
     },
     "output": {
         "detailRenderer": {
