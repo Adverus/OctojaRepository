@@ -1,13 +1,13 @@
 {
     "version": "1.0",
-    "generated": "2026-09-07T16:05:00Z",
+    "generated": "2026-09-07T16:13:00Z",
     "baseUrl": "https://raw.githubusercontent.com/Adverus/OctojaRepository/refs/heads/main/",
     "checks": [
         {
             "id": "smbv1-state",
             "name": {
-                "en": "SMBv1 State",
-                "de": "SMBv1-Zustand"
+                "en": "SMBv1 State [ICO][WIN]",
+                "de": "SMBv1-Zustand [ICO][WIN]"
             },
             "description": {
                 "en": "Reports the state of SMBv1 protocol.",
@@ -27,8 +27,10 @@
             "platforms": [
                 "win-x64"
             ],
-            "version": "1.0.0",
+            "version": "1.0.1",
+            "uiVersion": "1.0.0",
             "interval": 60,
+            "timeoutSeconds": 60,
             "executionLocation": "Device",
             "executable": {
                 "win-x64": {

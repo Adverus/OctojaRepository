@@ -8,8 +8,12 @@ $jsonInput = [System.Text.Encoding]::UTF8.GetString(
 # bound to the script's pipeline input (and stdin when redirected), which
 # makes user-level assignment unreliable across PS versions.
 $checkInput = $jsonInput | ConvertFrom-Json
-$output = @{ checkResult = 3 }
+$output = @{ checkResult = 0 }
 
+# ── User Script ──────────────────────────────────────
+# Wrapped in try/finally so the result is still serialized even if the user
+# script calls `exit` or `return` (PowerShell runs `finally` on `exit`).
+try {
 try {
     $SMB1Protocol = Get-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
     if ($SMB1Protocol.State -ne 'Disabled' -and $SMB1Protocol.State -ne 'DisabledWithPayloadRemoved' ) {
@@ -22,8 +26,12 @@ try {
     $output.diagnosticInfo = $PSItem.Exception
     $output.resultMessage = "Unhandled Exception"
     $output.checkResult = 3
-} finally {
-    $json = $output | ConvertTo-Json -Depth 10 -Compress
-    $bytes = [System.Text.Encoding]::UTF8.GetBytes($json)
-    [Console]::Out.Write("<<<OCTO_RESULT_BEGIN>>>" + [System.Convert]::ToBase64String($bytes) + "<<<OCTO_RESULT_END>>>")
+}
+}
+finally {
+# ── Output (auto-generated) ──────────────────────────
+# Markers must match CustomCheckScriptWrapper.ResultBeginMarker/ResultEndMarker.
+$json = $output | ConvertTo-Json -Depth 10 -Compress
+$bytes = [System.Text.Encoding]::UTF8.GetBytes($json)
+[Console]::Out.Write("<<<OCTO_RESULT_BEGIN>>>" + [System.Convert]::ToBase64String($bytes) + "<<<OCTO_RESULT_END>>>")
 }
