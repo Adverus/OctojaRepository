@@ -1,6 +1,6 @@
 {
     "version": "1.0",
-    "generated": "2026-09-07T16:44:00Z",
+    "generated": "2026-09-07T16:46:00Z",
     "baseUrl": "https://raw.githubusercontent.com/Adverus/OctojaRepository/refs/heads/main/",
     "checks": [
         {
@@ -22,6 +22,7 @@
             "category": "security",
             "tags": [
                 "ICO",
+                "ICORepository",
                 "security"
             ],
             "platforms": [
