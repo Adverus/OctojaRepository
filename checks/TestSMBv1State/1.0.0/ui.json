@@ -12,7 +12,7 @@
       "props": {
         "blocks": [
           {
-            "id": "6ed20275-407d-4fa9-acef-8ae6e3d4061d",
+            "id": null,
             "type": "status-overview",
             "unit": null,
             "title": null,
@@ -34,7 +34,7 @@
             "criticalThreshold": null
           },
           {
-            "id": "10cbed32-e9c5-4384-96be-f27625185cfa",
+            "id": null,
             "type": "output-text",
             "unit": null,
             "title": null,
@@ -66,7 +66,7 @@
       "props": {
         "blocks": [
           {
-            "id": "d8a5fc8a-952a-4adc-a7cd-67b59f5ed147",
+            "id": null,
             "type": "history-table",
             "unit": null,
             "title": null,
