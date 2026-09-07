@@ -1,6 +1,6 @@
 {
     "version": "1.0",
-    "generated": "2026-09-07T16:46:00Z",
+    "generated": "2026-09-07T16:48:00Z",
     "baseUrl": "https://raw.githubusercontent.com/Adverus/OctojaRepository/refs/heads/main/",
     "checks": [
         {
@@ -28,8 +28,7 @@
             "platforms": [
                 "win-x64"
             ],
-            "version": "1.0.1",
-            "uiVersion": "1.0.0",
+            "version": "1.0.2",
             "interval": 60,
             "timeoutSeconds": 60,
             "executionLocation": "Device",
