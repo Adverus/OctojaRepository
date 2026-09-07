@@ -1,40 +1,108 @@
 {
-    "input": {
-        "Skriptname": {
-            "order": 0,
-            "type": "string",
-            "title": {
-              "en": "Skriptname",
-              "de": "Skriptname",
-              "fr": "",
-              "nl": ""
-            },
-            "description": {
-              "en": "Tickettitel",
-              "de": "Tickettitel",
-              "fr": "",
-              "nl": ""
-            },
-            "isRequired": true,
-            "default": "SMBv1 State [ICO][WIN]",
-            "visibleIf": null,
-            "itemsSource": null,
-            "itemDisplaySelector": null,
-            "itemValueSelector": null,
-            "suggestFromOutput": null,
-            "items": null,
-            "properties": null,
-            "options": null,
-            "style": null,
-            "value": null
-        }
-    },
-    "output": {
-        "detailRenderer": {
+  "id": "custom/smbv1-state",
+  "input": {
 
-        },
-        "historyRenderer": {
-            
-        }
-    }
+  },
+  "output": {
+    "detailRenderer": {
+      "type": "baukasten",
+      "code": null,
+      "componentName": null,
+      "template": null,
+      "props": {
+        "blocks": [
+          {
+            "id": "6ed20275-407d-4fa9-acef-8ae6e3d4061d",
+            "type": "status-overview",
+            "unit": null,
+            "title": null,
+            "columns": null,
+            "content": null,
+            "entries": null,
+            "variant": null,
+            "maxField": null,
+            "maxValue": null,
+            "rowsField": null,
+            "itemBlocks": null,
+            "itemsField": null,
+            "labelField": null,
+            "valueField": null,
+            "statusField": "checkResult",
+            "itemNameField": null,
+            "itemStatusField": null,
+            "warningThreshold": null,
+            "criticalThreshold": null
+          },
+          {
+            "id": "10cbed32-e9c5-4384-96be-f27625185cfa",
+            "type": "output-text",
+            "unit": null,
+            "title": null,
+            "columns": null,
+            "content": null,
+            "entries": null,
+            "variant": "Body",
+            "maxField": null,
+            "maxValue": null,
+            "rowsField": null,
+            "itemBlocks": null,
+            "itemsField": null,
+            "labelField": null,
+            "valueField": "State",
+            "statusField": null,
+            "itemNameField": null,
+            "itemStatusField": null,
+            "warningThreshold": null,
+            "criticalThreshold": null
+          }
+        ]
+      }
+    },
+    "historyRenderer": {
+      "type": "baukasten",
+      "code": null,
+      "componentName": null,
+      "template": null,
+      "props": {
+        "blocks": [
+          {
+            "id": "d8a5fc8a-952a-4adc-a7cd-67b59f5ed147",
+            "type": "history-table",
+            "unit": null,
+            "title": null,
+            "columns": [
+              {
+                "unit": null,
+                "field": "State",
+                "format": null,
+                "header": {
+                  "de": "State",
+                  "en": "State",
+                  "fr": "",
+                  "nl": ""
+                }
+              }
+            ],
+            "content": null,
+            "entries": null,
+            "variant": null,
+            "maxField": null,
+            "maxValue": null,
+            "rowsField": null,
+            "itemBlocks": null,
+            "itemsField": null,
+            "labelField": null,
+            "valueField": null,
+            "statusField": null,
+            "itemNameField": null,
+            "itemStatusField": null,
+            "warningThreshold": null,
+            "criticalThreshold": null
+          }
+        ]
+      }
+    },
+    "widgetRenderer": null,
+    "textRenderer": null
+  }
 }
