@@ -1,6 +1,6 @@
 {
     "version": "1.0",
-    "generated": "2026-09-07T15:09:00Z",
+    "generated": "2026-09-07T15:18:00Z",
     "baseUrl": "https://raw.githubusercontent.com/Adverus/OctojaRepository/refs/heads/main/",
     "checks": [
         {
@@ -32,9 +32,9 @@
             "executionLocation": "Device",
             "executable": {
                 "win-x64": {
-                    "downloadUri": "https://raw.githubusercontent.com/Adverus/OctojaRepository/refs/heads/main/checks/TestSMBv1State/1.0.0/TestSMBv1State.ps1",
+                    "downloadUri": "https://raw.githubusercontent.com/Adverus/OctojaRepository/refs/heads/main/checks/TestSMBv1State/1.0.0/",
                     "executableName": "TestSMBv1State.ps1",
-                    "fileType": "Script",
+                    "fileType": "Ps1",
                     "executionType": "PowerShell"
                 }
             }
