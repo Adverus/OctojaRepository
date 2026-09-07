@@ -34,7 +34,7 @@
             "executionLocation": "Device",
             "executable": {
                 "win-x64": {
-                    "downloadUri": "https://raw.githubusercontent.com/Adverus/OctojaRepository/refs/heads/main/checks/TestSMBv1State/1.0.0/TestSMBv1State.ps1",
+                    "downloadUri": "https://raw.githubusercontent.com/Adverus/OctojaRepository/refs/heads/main/checks/smbv1-state/1.0.0/TestSMBv1State.ps1",
                     "executableName": "TestSMBv1State.ps1",
                     "fileType": "Ps1",
                     "executionType": "PowerShell"
