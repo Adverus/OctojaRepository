@@ -6,8 +6,8 @@
         {
             "id": "smbv1-state",
             "name": {
-                "en": "SMBv1 State [ICO][WIN]",
-                "de": "SMBv1-Zustand [ICO][WIN]"
+                "en": "SMBv1 State [ICO][REPO][WIN]",
+                "de": "SMBv1-Zustand [ICO][REPO][WIN]"
             },
             "description": {
                 "en": "Reports the state of SMBv1 protocol.",
